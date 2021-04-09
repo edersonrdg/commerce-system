@@ -1,10 +1,9 @@
-const express = require('express')
+const express = require('express');
 
 const createServer = () => {
+  const server = express();
 
-    const server = express()
+  server.listen(process.env.PORT || 3000);
+};
 
-    server.listen(process.env.PORT || 3000)
-}
-
-module.exports = createServer
+module.exports = createServer;
