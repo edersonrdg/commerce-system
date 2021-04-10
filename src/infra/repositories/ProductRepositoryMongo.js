@@ -6,11 +6,12 @@ module.exports = class extends ProductRepository {
     super();
   }
 
-  async create(title, description, price) {
+  async create(title, description, price, stock) {
     const newProduct = new Product({
       title,
       description,
       price,
+      stock,
     });
 
     await newProduct.save();
