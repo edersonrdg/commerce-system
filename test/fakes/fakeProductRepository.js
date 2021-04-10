@@ -15,8 +15,7 @@ module.exports = class extends ProductRepository {
   }
 
   findByTitle(title) {
-    const findProduct = products.find(product => product.title === title)
-
-    return findProduct
+    const product = products.find(product => product.title === title)
+    return product
   }
 };

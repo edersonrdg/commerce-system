@@ -2,7 +2,7 @@ const { BadRequestError } = require('../../../interfaces/http/http-errors');
 
 module.exports = {
   async execute({ title, description, price }, { productRepository }) {
-    const productExist = productRepository.findByTitle(title);
+    const productExist = await productRepository.findByTitle(title);
 
     if (productExist) throw new BadRequestError('Product already exists');
 
