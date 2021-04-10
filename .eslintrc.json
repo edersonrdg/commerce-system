@@ -11,7 +11,10 @@
         "sourceType": "module"
     },
     "rules": {
+      "no-unused-vars": ["error", { "argsIgnorePattern": "_" }],
       "no-useless-constructor": "off",
-      "class-methods-use-this": "off"
+      "class-methods-use-this": "off",
+      "global-require": "off",
+      "max-classes-per-file": "off"
     }
 }
