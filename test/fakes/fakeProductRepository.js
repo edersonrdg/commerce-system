@@ -18,4 +18,8 @@ module.exports = class extends ProductRepository {
     const product = products.find(product => product.title === title)
     return product
   }
+
+  getproducts() {
+    return products
+  }
 };

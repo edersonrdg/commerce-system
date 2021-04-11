@@ -19,6 +19,12 @@ module.exports = class extends ProductRepository {
     return newProduct;
   }
 
+  async getproducts() {
+    const products = await Product.find();
+
+    return products;
+  }
+
   async findByTitle(title) {
     const [findProduct] = await Product.find().where({ title });
 
