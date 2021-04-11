@@ -30,4 +30,10 @@ module.exports = class extends ProductRepository {
 
     return findProduct;
   }
+
+  async getProduct(id) {
+    const [product] = await Product.find().where({ _id: id });
+
+    return product;
+  }
 };

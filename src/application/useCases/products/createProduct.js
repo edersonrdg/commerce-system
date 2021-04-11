@@ -8,7 +8,7 @@ module.exports = {
 
     if (productExist) throw new BadRequestError('Product already exists');
 
-    const newproduct = productRepository.create(title, description, price, stock);
+    const newproduct = await productRepository.create(title, description, price, stock);
     return newproduct;
   },
 };

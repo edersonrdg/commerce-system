@@ -22,4 +22,9 @@ module.exports = class extends ProductRepository {
   getproducts() {
     return products
   }
+
+  getProduct(id) {
+    const product = products.find(product => product.title === id)
+    return product
+  }
 };

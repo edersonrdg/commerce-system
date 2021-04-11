@@ -5,6 +5,7 @@ function errorTreatment(error, request, response, _) {
     const { status, message } = error;
     return response.status(status).json({ error: message });
   }
+  console.error(error);
   return response.status(500).json({ error: 'Internal server error' });
 }
 

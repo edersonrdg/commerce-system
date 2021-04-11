@@ -1,6 +1,14 @@
+const { BadRequestError } = require('../../../interfaces/http/http-errors');
+
 module.exports = {
-  async execute({ productRepository }) {
-    const products = productRepository.getproducts();
+  async execute(id, { productRepository }) {
+    if (id) {
+      const product = await productRepository.getProduct(id);
+      if (!product) throw new BadRequestError('Invalid product id');
+      return product;
+    }
+
+    const products = await productRepository.getproducts();
     return products;
   },
 };
