@@ -1,18 +1,22 @@
-const createProduct = require('../../../../application/useCases/products/createProduct');
-const listProducts = require('../../../../application/useCases/products/listProducts');
+const { create, remove, list } = require('../../../../application/useCases/products');
 
 const locator = require('../../../../infra/config/locator');
 
 module.exports = {
   async create(request, response) {
-    const product = await createProduct.execute(request.body, locator);
+    const product = await create.execute(request.body, locator);
 
     return response.status(201).json(product);
   },
 
   async index(request, response) {
-    const products = await listProducts.execute(request.params.id, locator);
+    const products = await list.execute(request.params.id, locator);
 
     return response.status(200).json(products);
+  },
+  async delete(request, response) {
+    await remove.execute(request.params.id, locator);
+
+    return response.status(200).send();
   },
 };

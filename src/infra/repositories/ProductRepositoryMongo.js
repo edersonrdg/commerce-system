@@ -36,4 +36,8 @@ module.exports = class extends ProductRepository {
 
     return product;
   }
+
+  async remove(id) {
+    await Product.findByIdAndDelete(id);
+  }
 };

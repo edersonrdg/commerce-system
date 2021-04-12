@@ -1,6 +1,6 @@
 const ProductRepository = require('../../src/domain/Product/productRepository');
 
-const products = [];
+let products = [];
 
 module.exports = class extends ProductRepository {
   constructor() {
@@ -26,5 +26,9 @@ module.exports = class extends ProductRepository {
   getProduct(id) {
     const product = products.find(product => product.title === id)
     return product
+  }
+
+  remove(id) {
+    products = products.splice(products.indexOf(products[id]), 1)
   }
 };

@@ -6,4 +6,6 @@ module.exports = class {
   getproducts() {}
 
   getProduct() {}
+
+  remove() {}
 };

@@ -4,8 +4,10 @@ const productController = require('./productController');
 
 const productRouter = Router();
 
-productRouter.post('/', productController.create);
 productRouter.get('/', productController.index);
+productRouter.post('/', productController.create);
+productRouter.delete('/:id', productController.delete);
+
 productRouter.get('/:id', especifProductController.show);
 
 module.exports = productRouter;
