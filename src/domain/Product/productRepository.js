@@ -8,4 +8,6 @@ module.exports = class {
   getProduct() {}
 
   remove() {}
+
+  edit() {}
 };

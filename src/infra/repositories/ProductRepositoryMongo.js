@@ -40,4 +40,17 @@ module.exports = class extends ProductRepository {
   async remove(id) {
     await Product.findByIdAndDelete(id);
   }
+
+  async edit(id, data) {
+    const { title, description, price } = data;
+    const [product] = await Product.find().where({ _id: id });
+
+    const editProduct = await Product.findByIdAndUpdate(id, {
+      title: title || product.title,
+      description: description || product.description,
+      price: price || product.price,
+    });
+
+    return editProduct;
+  }
 };

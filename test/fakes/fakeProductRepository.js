@@ -31,4 +31,14 @@ module.exports = class extends ProductRepository {
   remove(id) {
     products = products.splice(products.indexOf(products[id]), 1)
   }
+
+  edit(id, data) {
+    const { title, description, price} = data
+    const product = products.find(product => product.title === id)
+    const index = products.indexOf(product)
+
+    products[index].title = title ? title : product.title
+    products[index].description = description ? description : product.description
+    products[index].price = price ? price : product.price
+  }
 };

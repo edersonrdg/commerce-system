@@ -1,4 +1,6 @@
-const { create, remove, list } = require('../../../../application/useCases/products');
+const {
+  create, remove, list, edit,
+} = require('../../../../application/useCases/products');
 
 const locator = require('../../../../infra/config/locator');
 
@@ -18,5 +20,10 @@ module.exports = {
     await remove.execute(request.params.id, locator);
 
     return response.status(200).send();
+  },
+  async update(request, response) {
+    const product = await edit.execute(request.params.id, request.body, locator);
+
+    return response.status(200).json(product);
   },
 };
