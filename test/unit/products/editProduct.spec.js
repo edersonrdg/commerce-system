@@ -13,8 +13,8 @@ function request(title, description, price) {
 describe('Edit Product', () => {
   beforeAll(async () => {
 
-  const requestData = request('carro', 'usado', 2000)
-  const requestData2 = request('carro2', 'usado', 2000)
+  const requestData = request('CARRO', 'USADO', 2000)
+  const requestData2 = request('CARRO2', 'USADO', 2000)
 
   await create.execute(requestData, fakelocator);
   await create.execute(requestData2, fakelocator);
@@ -25,12 +25,12 @@ describe('Edit Product', () => {
       price: 1010
     }
 
-    await edit.execute('carro', data, fakelocator)
+    await edit.execute('CARRO', data, fakelocator)
 
-    const product = await list.execute('carro', fakelocator)
+    const product = await list.execute('CARRO', null, fakelocator)
 
     expect(product).toEqual({
-      title: 'carro',
+      title: 'CARRO',
       description: 'new description',
       price: 1010
     })
@@ -40,13 +40,13 @@ describe('Edit Product', () => {
       price: 1010
     }
 
-    await edit.execute('carro2', data, fakelocator)
+    await edit.execute('CARRO2', data, fakelocator)
 
-    const product = await list.execute('carro2', fakelocator)
+    const product = await list.execute('CARRO2', null, fakelocator)
 
     expect(product).toEqual({
-      title: 'carro2',
-      description: 'usado',
+      title: 'CARRO2',
+      description: 'USADO',
       price: 1010
     })
   });

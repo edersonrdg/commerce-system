@@ -21,14 +21,14 @@ describe('Delete Product', () => {
   })
   it('Should to delete product', async () => {
 
-    await remove.execute('carro', fakelocator)
+    await remove.execute('CARRO', fakelocator)
 
-    const product = await list.execute(null, fakelocator)
+    const product = await list.execute(null, {}, fakelocator)
 
     expect(product.length).toEqual(1);
     expect(product).toEqual([{
-      title: 'carro2',
-      description: 'usado',
+      title: 'CARRO2',
+      description: 'USADO',
       price: 2000,
     }])
   });

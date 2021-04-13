@@ -19,8 +19,17 @@ module.exports = class extends ProductRepository {
     return product
   }
 
-  getproducts() {
-    return products
+  getproducts(query) {
+    const { title } = query;
+    const titleEx = title || '';
+
+    const product = products.filter((prod) => {
+      if (prod.title.startsWith(titleEx.toUpperCase())) return prod;
+    });
+
+    if (product.length === 0) return products
+
+    return product
   }
 
   getProduct(id) {

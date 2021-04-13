@@ -12,7 +12,7 @@ module.exports = {
   },
 
   async index(request, response) {
-    const products = await list.execute(request.params.id, locator);
+    const products = await list.execute(request.params.id, request.query, locator);
 
     return response.status(200).json(products);
   },

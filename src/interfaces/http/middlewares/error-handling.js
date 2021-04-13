@@ -10,6 +10,7 @@ function errorTreatment(error, request, response, _) {
     const { message, status } = error;
     return response.status(status).json({ error: message });
   }
+  // eslint-disable-next-line no-console
   console.error(error);
   return response.status(500).json({ error: 'Internal server error' });
 }

@@ -7,13 +7,13 @@ describe('List Product', () => {
   beforeAll(async () => {
 
   const requestData = {
-    title: 'carro',
-    description: 'usado',
+    title: 'CARRO',
+    description: 'USADO',
     price: 2000,
   };
   const requestData2 = {
-    title: 'carro2',
-    description: 'usado',
+    title: 'BICICLETA',
+    description: 'USADO',
     price: 2000,
   };
 
@@ -22,22 +22,32 @@ describe('List Product', () => {
   })
   it('Should to list all products', async () => {
 
-    const product = await listProduct.execute(null, fakelocator)
+    const product = await listProduct.execute(null, {}, fakelocator)
 
     expect(product.length).toEqual(2);
   });
   it('Should to return especif product', async () => {
 
-    const product = await listProduct.execute('carro', fakelocator)
+    const product = await listProduct.execute('CARRO', {}, fakelocator)
 
     expect(product).toEqual({
-      title: 'carro',
-      description: 'usado',
+      title: 'CARRO',
+      description: 'USADO',
       price: 2000,
     });
   });
+  it('Should to return product by query title', async () => {
+
+    const product = await listProduct.execute(null , { title: 'bi' }, fakelocator)
+
+    expect(product).toEqual([{
+      title: 'BICICLETA',
+      description: 'USADO',
+      price: 2000,
+    }]);
+  });
 
   it('Should to return a custom error if product id is invalid', async () => {
-    await expect(listProduct.execute(3, fakelocator)).rejects.toEqual(new BadRequestError('Invalid product id'));
+    await expect(listProduct.execute(3, {}, fakelocator)).rejects.toEqual(new BadRequestError('Invalid product id'));
   });
 })

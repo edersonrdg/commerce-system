@@ -19,8 +19,13 @@ module.exports = class extends ProductRepository {
     return newProduct;
   }
 
-  async getproducts() {
-    const products = await Product.find();
+  async getproducts(query) {
+    const { title } = query;
+    const titleEx = title || '';
+
+    const products = await Product.find({
+      title: { $regex: titleEx.toUpperCase() },
+    });
 
     return products;
   }
