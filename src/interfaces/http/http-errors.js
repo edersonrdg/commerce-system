@@ -7,11 +7,10 @@ class BaseHttpError extends Error {
 }
 
 class BadRequestError extends BaseHttpError {
-  constructor(message, code) {
+  constructor(message) {
     super(message);
     this.title = 'Bad Request';
     this.status = 400;
-    this.code = code;
   }
 }
 

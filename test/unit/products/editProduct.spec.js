@@ -2,19 +2,19 @@ const { edit, create, list } = require('../../../src/application/useCases/produc
 const fakelocator = require('../../fakes/fakelocator')
 const { BadRequestError } = require('../../../src/interfaces/http/http-errors')
 
+function request(title, description, price) {
+  return {
+    title,
+    description,
+    price
+  }
+}
+
 describe('Edit Product', () => {
   beforeAll(async () => {
 
-  const requestData = {
-    title: 'carro',
-    description: 'usado',
-    price: 2000,
-  };
-  const requestData2 = {
-    title: 'carro2',
-    description: 'usado',
-    price: 2000,
-  };
+  const requestData = request('carro', 'usado', 2000)
+  const requestData2 = request('carro2', 'usado', 2000)
 
   await create.execute(requestData, fakelocator);
   await create.execute(requestData2, fakelocator);
