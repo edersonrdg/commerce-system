@@ -7,6 +7,10 @@ module.exports = class extends sellerRepository {
     super();
   }
 
+  getAll() {
+    return sellers
+  }
+
   findByCode(code) {
     const seller = sellers.find(seller => seller.code === code)
     return seller

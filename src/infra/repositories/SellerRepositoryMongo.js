@@ -22,4 +22,9 @@ module.exports = class extends SellerRepository {
 
     return newSeller;
   }
+
+  async getAll() {
+    const sellers = await Seller.find();
+    return sellers;
+  }
 };
