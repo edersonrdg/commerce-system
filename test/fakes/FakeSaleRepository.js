@@ -25,8 +25,7 @@ module.exports = class extends SaleRepository {
   }
 
   get(id) {
-    const sale = sales.find(sale => sale.id === id)
-    return sale
+    return sales[id]
   }
 
   async getAll() {
