@@ -23,7 +23,7 @@ describe('Seller | Delete', () => {
 
     await remove.execute('AAA', fakelocator)
 
-    const sellers = await list.execute(fakelocator)
+    const sellers = await list.execute(null, fakelocator)
 
     expect(sellers.length).toEqual(1);
     expect(sellers).toEqual([request('Maria', 'imgMaria', 'BBB')])

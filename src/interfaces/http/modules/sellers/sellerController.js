@@ -10,7 +10,7 @@ module.exports = {
     return response.status(201).json(sellers);
   },
   async index(request, response) {
-    const sellers = await list.execute(locator);
+    const sellers = await list.execute(request.params.id, locator);
     return response.status(201).json(sellers);
   },
   async update(request, response) {

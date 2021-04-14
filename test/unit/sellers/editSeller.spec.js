@@ -22,7 +22,7 @@ describe('Product | Edit', () => {
 
     await edit.execute('AAA', data, fakelocator)
 
-    const product = await list.execute(fakelocator)
+    const product = await list.execute(null, fakelocator)
 
     expect(product).toEqual([request('maria', 'imgMaria', 'AAA')])
   });
@@ -31,7 +31,7 @@ describe('Product | Edit', () => {
 
     await edit.execute('AAA', data, fakelocator)
 
-    const product = await list.execute(fakelocator)
+    const product = await list.execute(null, fakelocator)
 
     expect(product).toEqual([request('maria', 'imgMaria', 'IAO')])
   });

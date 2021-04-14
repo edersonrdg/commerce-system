@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1618368886785" clover="3.2.0">
-  <project timestamp="1618368886786" name="All files">
-    <metrics statements="130" coveredstatements="130" conditionals="40" coveredconditionals="35" methods="49" coveredmethods="37" elements="219" coveredelements="202" complexity="0" loc="130" ncloc="130" packages="8" files="20" classes="20"/>
+<coverage generated="1618422627733" clover="3.2.0">
+  <project timestamp="1618422627734" name="All files">
+    <metrics statements="135" coveredstatements="135" conditionals="44" coveredconditionals="39" methods="49" coveredmethods="37" elements="228" coveredelements="211" complexity="0" loc="135" ncloc="135" packages="8" files="20" classes="20"/>
     <package name="src.application.useCases.products">
       <metrics statements="28" coveredstatements="28" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
       <file name="createProduct.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\application\useCases\products\createProduct.js">
@@ -49,7 +49,7 @@
       </file>
     </package>
     <package name="src.application.useCases.seller">
-      <metrics statements="23" coveredstatements="23" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+      <metrics statements="28" coveredstatements="28" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
       <file name="deleteSeller.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\application\useCases\seller\deleteSeller.js">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
@@ -72,10 +72,15 @@
         <line num="1" count="3" type="stmt"/>
       </file>
       <file name="listSellers.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\application\useCases\seller\listSellers.js">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
-        <line num="3" count="4" type="stmt"/>
-        <line num="4" count="4" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
       </file>
       <file name="newSeller.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\application\useCases\seller\newSeller.js">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
@@ -148,12 +153,12 @@
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="http-errors.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\interfaces\http\http-errors.js">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="3" count="14" type="stmt"/>
-        <line num="4" count="14" type="stmt"/>
-        <line num="5" count="14" type="stmt"/>
-        <line num="11" count="14" type="stmt"/>
-        <line num="12" count="14" type="stmt"/>
-        <line num="13" count="14" type="stmt"/>
+        <line num="3" count="16" type="stmt"/>
+        <line num="4" count="16" type="stmt"/>
+        <line num="5" count="16" type="stmt"/>
+        <line num="11" count="16" type="stmt"/>
+        <line num="12" count="16" type="stmt"/>
+        <line num="13" count="16" type="stmt"/>
         <line num="17" count="8" type="stmt"/>
       </file>
     </package>
@@ -172,8 +177,8 @@
         <line num="24" count="6" type="stmt"/>
         <line num="25" count="6" type="stmt"/>
         <line num="27" count="6" type="stmt"/>
-        <line num="30" count="5" type="stmt"/>
-        <line num="31" count="5" type="stmt"/>
+        <line num="30" count="8" type="stmt"/>
+        <line num="31" count="7" type="stmt"/>
         <line num="35" count="2" type="stmt"/>
         <line num="36" count="2" type="stmt"/>
         <line num="37" count="2" type="stmt"/>
