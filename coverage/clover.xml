@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1618427635007" clover="3.2.0">
-  <project timestamp="1618427635007" name="All files">
-    <metrics statements="135" coveredstatements="135" conditionals="44" coveredconditionals="39" methods="49" coveredmethods="37" elements="228" coveredelements="211" complexity="0" loc="135" ncloc="135" packages="8" files="20" classes="20"/>
+<coverage generated="1618433186196" clover="3.2.0">
+  <project timestamp="1618433186196" name="All files">
+    <metrics statements="145" coveredstatements="145" conditionals="46" coveredconditionals="41" methods="50" coveredmethods="38" elements="241" coveredelements="224" complexity="0" loc="145" ncloc="145" packages="8" files="21" classes="21"/>
     <package name="src.application.useCases.products">
       <metrics statements="28" coveredstatements="28" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
       <file name="createProduct.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\application\useCases\products\createProduct.js">
@@ -87,7 +87,7 @@
         <line num="1" count="4" type="stmt"/>
         <line num="2" count="4" type="stmt"/>
         <line num="4" count="4" type="stmt"/>
-        <line num="8" count="7" type="stmt"/>
+        <line num="8" count="13" type="stmt"/>
         <line num="10" count="7" type="stmt"/>
         <line num="12" count="7" type="cond" truecount="2" falsecount="0"/>
         <line num="14" count="6" type="stmt"/>
@@ -98,10 +98,10 @@
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="errors.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\domain\errors.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="3" count="10" type="stmt"/>
-        <line num="4" count="10" type="stmt"/>
-        <line num="10" count="10" type="stmt"/>
-        <line num="14" count="4" type="stmt"/>
+        <line num="3" count="22" type="stmt"/>
+        <line num="4" count="22" type="stmt"/>
+        <line num="10" count="22" type="stmt"/>
+        <line num="14" count="8" type="stmt"/>
       </file>
     </package>
     <package name="src.domain.Product">
@@ -122,13 +122,15 @@
       </file>
     </package>
     <package name="src.domain.seller">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="1"/>
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="1"/>
       <file name="Seller.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\domain\seller\Seller.js">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="13" type="stmt"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
       </file>
       <file name="sellerRepository.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\domain\seller\sellerRepository.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
@@ -136,7 +138,7 @@
       </file>
     </package>
     <package name="src.infra.validators.joi">
-      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
       <file name="product-validator.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\infra\validators\joi\product-validator.js">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="4" type="stmt"/>
@@ -147,6 +149,17 @@
         <line num="30" count="13" type="cond" truecount="2" falsecount="0"/>
         <line num="31" count="5" type="stmt"/>
         <line num="33" count="8" type="stmt"/>
+      </file>
+      <file name="seller-validator.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\infra\validators\joi\seller-validator.js">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="30" count="13" type="stmt"/>
+        <line num="31" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="6" type="stmt"/>
+        <line num="34" count="7" type="stmt"/>
       </file>
     </package>
     <package name="src.interfaces.http">

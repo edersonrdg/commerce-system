@@ -5,10 +5,10 @@ class DomainError extends Error {
   }
 }
 
-class ValidateProductError extends DomainError {
+class ValidateError extends DomainError {
   constructor(message) {
     super(message);
   }
 }
 
-module.exports = { DomainError, ValidateProductError };
+module.exports = { DomainError, ValidateError };

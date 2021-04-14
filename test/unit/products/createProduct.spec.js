@@ -1,7 +1,7 @@
 const createProduct = require('../../../src/application/useCases/products/createProduct');
 const fakelocator = require('../../fakes/fakelocator');
 const { BadRequestError } = require('../../../src/interfaces/http/http-errors')
-const { ValidateProductError } = require('../../../src/domain/errors')
+const { ValidateError } = require('../../../src/domain/errors')
 
 function request(title, description, price) {
   return {
@@ -23,14 +23,14 @@ describe('Product | Create', () => {
   });
   it('Should to return custom error if product data is invalid', async () => {
     await expect(createProduct.execute(request(undefined, 'usado', 2000), fakelocator))
-      .rejects.toEqual(new ValidateProductError('"title" is required'));
+      .rejects.toEqual(new ValidateError('"title" is required'));
     await expect(createProduct.execute(request(0, 'usado', 2000), fakelocator))
-      .rejects.toEqual(new ValidateProductError('"title" must be a string'));
+      .rejects.toEqual(new ValidateError('"title" must be a string'));
     await expect(createProduct.execute(request('carro', undefined, 2000), fakelocator))
-      .rejects.toEqual(new ValidateProductError('"description" is required'));
+      .rejects.toEqual(new ValidateError('"description" is required'));
     await expect(createProduct.execute(request('carro', 0, 2000), fakelocator))
-      .rejects.toEqual(new ValidateProductError('"description" must be a string'));
+      .rejects.toEqual(new ValidateError('"description" must be a string'));
     await expect(createProduct.execute(request('carro', 'usado', undefined), fakelocator))
-      .rejects.toEqual(new ValidateProductError('"price" is required'));
+      .rejects.toEqual(new ValidateError('"price" is required'));
   });
 });
