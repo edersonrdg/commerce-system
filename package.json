@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "node:dev": "nodemon index.js",
-    "test": "jest test --coverage",
+    "test": "jest test --verbose --coverage --color",
     "test:unit": "jest test/unit --watch"
   },
   "dependencies": {

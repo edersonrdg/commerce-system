@@ -2,7 +2,7 @@ const { remove, create, list } = require('../../../src/application/useCases/prod
 const fakelocator = require('../../fakes/fakelocator')
 const { BadRequestError } = require('../../../src/interfaces/http/http-errors')
 
-describe('Delete Product', () => {
+describe('Product | Delete', () => {
   beforeAll(async () => {
 
   const requestData = {

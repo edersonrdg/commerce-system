@@ -25,11 +25,9 @@ module.exports = class extends ProductRepository {
 
     const product = products.filter((prod) => {
       if (prod.title.startsWith(titleEx.toUpperCase())) return prod;
-    });
+    }) || null;
 
-    if (product.length === 0) return products
-
-    return product
+    return product || products
   }
 
   getProduct(id) {

@@ -8,10 +8,10 @@ function request(title, description, price) {
     title,
     description,
     price
-  }
-}
+  };
+};
 
-describe('Create Product', () => {
+describe('Product | Create', () => {
   it('Should to create a new product', async () => {
     const product = await createProduct.execute(request('CARRO', 'USADO', 2000), fakelocator);
 
@@ -20,7 +20,7 @@ describe('Create Product', () => {
   it('Should to return custom error if product is already exists', async () => {
     await expect(createProduct.execute(request('carro', 'usado', 2000), fakelocator))
       .rejects.toEqual(new BadRequestError('Product already exists'));
-  })
+  });
   it('Should to return custom error if product data is invalid', async () => {
     await expect(createProduct.execute(request(undefined, 'usado', 2000), fakelocator))
       .rejects.toEqual(new ValidateProductError('"title" is required'));
@@ -32,5 +32,5 @@ describe('Create Product', () => {
       .rejects.toEqual(new ValidateProductError('"description" must be a string'));
     await expect(createProduct.execute(request('carro', 'usado', undefined), fakelocator))
       .rejects.toEqual(new ValidateProductError('"price" is required'));
-  })
+  });
 });

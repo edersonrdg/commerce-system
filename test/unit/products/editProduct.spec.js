@@ -10,7 +10,7 @@ function request(title, description, price) {
   }
 }
 
-describe('Edit Product', () => {
+describe('Product | Edit', () => {
   beforeAll(async () => {
 
   const requestData = request('CARRO', 'USADO', 2000)

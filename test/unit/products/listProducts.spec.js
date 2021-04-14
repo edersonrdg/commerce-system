@@ -3,7 +3,7 @@ const createProduct = require('../../../src/application/useCases/products/create
 const fakelocator = require('../../fakes/fakelocator')
 const { BadRequestError } = require('../../../src/interfaces/http/http-errors')
 
-describe('List Product', () => {
+describe('Product | List', () => {
   beforeAll(async () => {
 
   const requestData = {
@@ -23,6 +23,16 @@ describe('List Product', () => {
   it('Should to list all products', async () => {
 
     const product = await listProduct.execute(null, {}, fakelocator)
+
+    expect(product).toEqual([{
+      title: 'CARRO',
+      description: 'USADO',
+      price: 2000,
+    },{
+      title: 'BICICLETA',
+      description: 'USADO',
+      price: 2000,
+    }]);
 
     expect(product.length).toEqual(2);
   });
