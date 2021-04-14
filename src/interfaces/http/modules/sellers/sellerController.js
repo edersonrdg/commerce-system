@@ -5,7 +5,8 @@ const locator = require('../../../../infra/config/locator');
 
 module.exports = {
   async create(request, response) {
-    const sellers = await create.execute(request.body, locator);
+    const sellers = await create
+      .execute({ image: request.file.filename, ...request.body }, locator);
 
     return response.status(201).json(sellers);
   },
