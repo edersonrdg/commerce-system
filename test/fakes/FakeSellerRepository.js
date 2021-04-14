@@ -11,6 +11,10 @@ module.exports = class extends sellerRepository {
     return sellers
   }
 
+  remove(id) {
+    sellers = sellers.splice(sellers.indexOf(sellers[id]), 1)
+  }
+
   findByCode(code) {
     const seller = sellers.find(seller => seller.code === code)
     return seller
@@ -21,5 +25,9 @@ module.exports = class extends sellerRepository {
     sellers.push(data);
 
     return data;
+  }
+  getSeller(id) {
+    const seller = sellers.find(seller => seller.code === id)
+    return seller
   }
 };

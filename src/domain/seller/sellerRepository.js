@@ -4,4 +4,8 @@ module.exports = class {
   findByCode() {}
 
   getAll() {}
+
+  remove() {}
+
+  getSeller() {}
 };

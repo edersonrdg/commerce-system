@@ -23,8 +23,17 @@ module.exports = class extends SellerRepository {
     return newSeller;
   }
 
+  async remove(id) {
+    await Seller.findByIdAndDelete(id);
+  }
+
   async getAll() {
     const sellers = await Seller.find();
     return sellers;
+  }
+
+  async getSeller(id) {
+    const [seller] = await Seller.find().where({ _id: id });
+    return seller;
   }
 };

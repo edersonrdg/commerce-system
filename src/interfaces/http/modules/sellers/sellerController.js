@@ -1,4 +1,4 @@
-const { create, list } = require('../../../../application/useCases/seller');
+const { create, list, remove } = require('../../../../application/useCases/seller');
 const locator = require('../../../../infra/config/locator');
 
 module.exports = {
@@ -10,5 +10,9 @@ module.exports = {
   async index(request, response) {
     const sellers = await list.execute(locator);
     return response.status(201).json(sellers);
+  },
+  async delete(request, response) {
+    await remove.execute(request.params.id, locator);
+    return response.status(200).send();
   },
 };
