@@ -36,4 +36,17 @@ module.exports = class extends SellerRepository {
     const [seller] = await Seller.find().where({ _id: id });
     return seller;
   }
+
+  async edit(id, data) {
+    const { name, image, code } = data;
+    const [seller] = await Seller.find().where({ _id: id });
+
+    const editseller = await Seller.findByIdAndUpdate(id, {
+      name: name || seller.name,
+      image: image || seller.image,
+      code: code || seller.code,
+    });
+
+    return editseller;
+  }
 };

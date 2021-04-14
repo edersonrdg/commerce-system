@@ -30,4 +30,14 @@ module.exports = class extends sellerRepository {
     const seller = sellers.find(seller => seller.code === id)
     return seller
   }
+
+  edit(id, data) {
+    const { name, image, code } = data
+    const seller = sellers.find(seller => seller.code === id)
+    const index = sellers.indexOf(seller)
+
+    sellers[index].name = name ? name : seller.name
+    sellers[index].image = image ? image : seller.image
+    sellers[index].code  = code  ? code  : seller.code
+  }
 };

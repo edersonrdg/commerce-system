@@ -29,7 +29,7 @@ describe('Seller | Delete', () => {
     expect(sellers).toEqual([request('Maria', 'imgMaria', 'BBB')])
   });
 
-  it('Should to return a custom error if product id is invalid', async () => {
+  it('Should to return a custom error if seller id is invalid', async () => {
     await expect(remove.execute(null, fakelocator)).rejects.toEqual(new BadRequestError('Invalid seller id'));
   });
 });
