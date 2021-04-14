@@ -6,6 +6,11 @@ module.exports = class extends SellerRepository {
     super();
   }
 
+  async findByCode(code) {
+    const [seller] = await Seller.find().where({ code });
+    return seller;
+  }
+
   async create(name, image, code) {
     const newSeller = new Seller({
       name,

@@ -1,10 +1,15 @@
-const ProductRepository = require('../../src/domain/Product/productRepository');
+const sellerRepository = require('../../src/domain/seller/sellerRepository');
 
 let sellers = [];
 
-module.exports = class extends ProductRepository {
+module.exports = class extends sellerRepository {
   constructor() {
     super();
+  }
+
+  findByCode(code) {
+    const seller = sellers.find(seller => seller.code === code)
+    return seller
   }
 
   async create(name, image, code) {
