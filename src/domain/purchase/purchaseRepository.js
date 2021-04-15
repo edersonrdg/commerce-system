@@ -4,4 +4,6 @@ module.exports = class {
   get() {}
 
   getAll() {}
+
+  remove() {}
 };

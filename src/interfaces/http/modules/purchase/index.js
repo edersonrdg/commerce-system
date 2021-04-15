@@ -6,6 +6,8 @@ const purchaseRouter = Router();
 
 purchaseRouter.post('/:id', purchaseController.create);
 purchaseRouter.get('/', purchaseController.index);
+purchaseRouter.delete('/:id', purchaseController.delete);
+
 purchaseRouter.get('/:id', especificPurchaseController.show);
 
 module.exports = purchaseRouter;

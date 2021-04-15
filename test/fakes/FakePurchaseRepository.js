@@ -1,6 +1,6 @@
 const purchaseRepository = require('../../src/domain/purchase/purchaseRepository')
 
-const purchases = []
+let purchases = []
 
 module.exports = class extends purchaseRepository {
   constructor() {
@@ -18,5 +18,9 @@ module.exports = class extends purchaseRepository {
 
   getAll() {
     return purchases
+  }
+
+  remove(id) {
+    purchases = purchases.splice(purchases.indexOf(purchases[id]), 1)
   }
 }

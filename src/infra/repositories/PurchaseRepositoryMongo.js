@@ -25,4 +25,8 @@ module.exports = class extends PurchaseRepository {
     const purchases = await Purchase.find();
     return purchases;
   }
+
+  async remove(id) {
+    await Purchase.findByIdAndDelete(id);
+  }
 };
