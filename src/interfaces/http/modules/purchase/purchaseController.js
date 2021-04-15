@@ -9,7 +9,7 @@ module.exports = {
     return response.status(200).json(newPurchase);
   },
   async index(request, response) {
-    const purchases = await listPurchase.execute(locator);
+    const purchases = await listPurchase.execute(request.params.id, locator);
     return response.status(200).json(purchases);
   },
 };

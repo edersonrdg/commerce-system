@@ -22,10 +22,18 @@ describe('Purchase | List', () => {
     })
 
   it('Should to list all purchases', async () => {
-    const purchases = await listPurchase.execute(fakelocator);
+    const purchases = await listPurchase.execute(null, fakelocator);
 
     expect(purchases).toEqual([request('CARRO', 20), request('CARRO', 20)]);
     expect(purchases.length).toEqual(2);
   });
+  it('Should to return especific purchase', async () => {
+    const purchases = await listPurchase.execute(1, fakelocator);
 
+    expect(purchases).toEqual(request('CARRO', 20));
+  });
+  it('Should to return custom error if purchase id is invalid', async () => {
+
+    await expect(listPurchase.execute(200, fakelocator)).rejects.toEqual(new BadRequestError('Invalid purchase id'));
+  });
 });

@@ -17,7 +17,7 @@ module.exports = class extends PurchaseRepository {
   }
 
   async get(id) {
-    const purchase = await Purchase.find().where({ _id: id });
+    const [purchase] = await Purchase.find().where({ _id: id });
     return purchase;
   }
 

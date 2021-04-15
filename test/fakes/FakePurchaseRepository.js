@@ -12,7 +12,9 @@ module.exports = class extends purchaseRepository {
     return { productId, qnt }
   }
 
-  get() {}
+  get(id) {
+    return purchases[id]
+  }
 
   getAll() {
     return purchases
