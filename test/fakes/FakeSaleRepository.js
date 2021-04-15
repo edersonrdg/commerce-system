@@ -1,6 +1,6 @@
 const SaleRepository = require('../../src/domain/sale/saleRepository');
 
-const sales = []
+let sales = []
 
 module.exports = class extends SaleRepository {
   constructor() {
@@ -18,5 +18,9 @@ module.exports = class extends SaleRepository {
 
   async getAll() {
     return sales
+  }
+
+  remove(id) {
+    sales = sales.splice(sales.indexOf(sales[id]), 1)
   }
 };

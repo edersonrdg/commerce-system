@@ -6,6 +6,7 @@ const saleRouter = Router();
 
 saleRouter.post('/', saleController.create);
 saleRouter.get('/', saleController.index);
+saleRouter.delete('/:id', saleController.delete);
 
 saleRouter.get('/:id', especificSaleController.show);
 

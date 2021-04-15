@@ -27,4 +27,8 @@ module.exports = class extends SaleRepository {
     const sales = await Sale.find();
     return sales;
   }
+
+  async remove(id) {
+    await Sale.findByIdAndDelete(id);
+  }
 };
