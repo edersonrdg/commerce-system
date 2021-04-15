@@ -15,6 +15,10 @@ const sellerSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Code is required'],
   },
+  sales: {
+    type: Number,
+    default: 0,
+  },
 }, {
   timestamps: true,
 });

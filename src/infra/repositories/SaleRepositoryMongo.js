@@ -2,7 +2,7 @@ const SaleRepository = require('../../domain/sale/saleRepository');
 const mongoose = require('../orm/mongoose');
 const Sale = require('../orm/mongoose/schemas/Sale');
 const Product = require('../orm/mongoose/schemas/Product');
-// const Seller = require('../orm/mongoose/schemas/Seller');
+const Seller = require('../orm/mongoose/schemas/Seller');
 
 module.exports = class extends SaleRepository {
   constructor() {
@@ -21,10 +21,15 @@ module.exports = class extends SaleRepository {
 
     await sessions.withTransaction(async () => {
       const product = await Product.findById(productId).session(sessions);
-      product.stock -= 1;
+      product.stock -= qnt;
+      product.sales += qnt;
 
-      await product.save();
+      const seller = await Seller.findById(sellerId).session(sessions);
+      seller.sales += qnt;
+
       await sale.save();
+      await product.save();
+      await seller.save();
     });
 
     sessions.endSession();

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1618506732735" clover="3.2.0">
-  <project timestamp="1618506732736" name="All files">
-    <metrics statements="223" coveredstatements="223" conditionals="72" coveredconditionals="67" methods="76" coveredmethods="56" elements="371" coveredelements="346" complexity="0" loc="223" ncloc="223" packages="12" files="34" classes="34"/>
+<coverage generated="1618521641133" clover="3.2.0">
+  <project timestamp="1618521641134" name="All files">
+    <metrics statements="225" coveredstatements="225" conditionals="76" coveredconditionals="71" methods="76" coveredmethods="56" elements="377" coveredelements="352" complexity="0" loc="225" ncloc="225" packages="12" files="34" classes="34"/>
     <package name="src.application.useCases.Sale">
-      <metrics statements="24" coveredstatements="24" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3"/>
+      <metrics statements="25" coveredstatements="25" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
       <file name="deleteSale.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\application\useCases\Sale\deleteSale.js">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="2" type="stmt"/>
@@ -28,17 +28,18 @@
         <line num="11" count="2" type="stmt"/>
       </file>
       <file name="newSale.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\application\useCases\Sale\newSale.js">
-        <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
-        <line num="6" count="11" type="stmt"/>
-        <line num="8" count="9" type="stmt"/>
-        <line num="9" count="9" type="cond" truecount="2" falsecount="0"/>
-        <line num="11" count="8" type="stmt"/>
-        <line num="12" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="7" type="stmt"/>
-        <line num="15" count="7" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="16" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="7" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
       </file>
     </package>
     <package name="src.application.useCases.products">
@@ -48,11 +49,11 @@
         <line num="1" count="10" type="stmt"/>
         <line num="2" count="10" type="stmt"/>
         <line num="4" count="10" type="stmt"/>
-        <line num="8" count="22" type="stmt"/>
-        <line num="10" count="17" type="stmt"/>
-        <line num="12" count="17" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="16" type="stmt"/>
-        <line num="15" count="16" type="stmt"/>
+        <line num="8" count="23" type="stmt"/>
+        <line num="10" count="18" type="stmt"/>
+        <line num="12" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="17" type="stmt"/>
+        <line num="15" count="17" type="stmt"/>
       </file>
       <file name="deleteProduct.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\application\useCases\products\deleteProduct.js">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
@@ -182,11 +183,11 @@
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="10" type="stmt"/>
         <line num="3" count="10" type="stmt"/>
-        <line num="5" count="22" type="stmt"/>
-        <line num="7" count="17" type="stmt"/>
-        <line num="8" count="17" type="stmt"/>
-        <line num="9" count="17" type="stmt"/>
-        <line num="10" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="23" type="stmt"/>
+        <line num="7" count="18" type="stmt"/>
+        <line num="8" count="18" type="stmt"/>
+        <line num="9" count="18" type="stmt"/>
+        <line num="10" count="18" type="cond" truecount="2" falsecount="0"/>
       </file>
       <file name="productRepository.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\domain\Product\productRepository.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
@@ -207,17 +208,18 @@
       </file>
     </package>
     <package name="src.domain.sale">
-      <metrics statements="9" coveredstatements="9" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="1"/>
+      <metrics statements="10" coveredstatements="10" conditionals="8" coveredconditionals="8" methods="5" coveredmethods="1"/>
       <file name="Sale.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\domain\sale\Sale.js">
-        <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <metrics statements="9" coveredstatements="9" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
-        <line num="5" count="11" type="stmt"/>
-        <line num="6" count="11" type="cond" truecount="2" falsecount="0"/>
-        <line num="7" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="9" type="stmt"/>
-        <line num="10" count="9" type="stmt"/>
-        <line num="11" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="10" type="cond" truecount="2" falsecount="0"/>
       </file>
       <file name="saleRepository.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\domain\sale\saleRepository.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
@@ -248,10 +250,10 @@
         <line num="2" count="10" type="stmt"/>
         <line num="4" count="10" type="stmt"/>
         <line num="27" count="10" type="stmt"/>
-        <line num="29" count="22" type="stmt"/>
-        <line num="30" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="23" type="stmt"/>
+        <line num="30" count="23" type="cond" truecount="2" falsecount="0"/>
         <line num="31" count="5" type="stmt"/>
-        <line num="33" count="17" type="stmt"/>
+        <line num="33" count="18" type="stmt"/>
       </file>
       <file name="seller-validator.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\infra\validators\joi\seller-validator.js">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
@@ -269,12 +271,12 @@
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="http-errors.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\interfaces\http\http-errors.js">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="3" count="30" type="stmt"/>
-        <line num="4" count="30" type="stmt"/>
-        <line num="5" count="30" type="stmt"/>
-        <line num="11" count="30" type="stmt"/>
-        <line num="12" count="30" type="stmt"/>
-        <line num="13" count="30" type="stmt"/>
+        <line num="3" count="32" type="stmt"/>
+        <line num="4" count="32" type="stmt"/>
+        <line num="5" count="32" type="stmt"/>
+        <line num="11" count="32" type="stmt"/>
+        <line num="12" count="32" type="stmt"/>
+        <line num="13" count="32" type="stmt"/>
         <line num="17" count="14" type="stmt"/>
       </file>
     </package>
@@ -332,18 +334,18 @@
         <line num="3" count="14" type="stmt"/>
         <line num="5" count="14" type="stmt"/>
         <line num="7" count="14" type="stmt"/>
-        <line num="11" count="16" type="stmt"/>
-        <line num="12" count="16" type="stmt"/>
-        <line num="14" count="16" type="stmt"/>
-        <line num="18" count="17" type="stmt"/>
-        <line num="19" count="17" type="stmt"/>
+        <line num="11" count="17" type="stmt"/>
+        <line num="12" count="17" type="stmt"/>
+        <line num="14" count="17" type="stmt"/>
+        <line num="18" count="18" type="stmt"/>
+        <line num="19" count="18" type="stmt"/>
         <line num="23" count="3" type="stmt"/>
         <line num="24" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="26" count="3" type="cond" truecount="1" falsecount="1"/>
         <line num="27" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="30" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="34" count="30" type="stmt"/>
-        <line num="35" count="25" type="stmt"/>
+        <line num="34" count="31" type="stmt"/>
+        <line num="35" count="26" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
         <line num="43" count="2" type="stmt"/>
         <line num="44" count="3" type="stmt"/>
