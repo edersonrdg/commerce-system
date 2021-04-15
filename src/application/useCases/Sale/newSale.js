@@ -8,6 +8,8 @@ module.exports = {
     const existProd = await productRepository.getProduct(productId);
     if (!existProd) throw new BadRequestError('Invalid product id');
 
+    if (existProd.stock <= 0) throw new BadRequestError('This product has no stock');
+
     const existSeller = await sellerRepository.getSeller(sellerId);
     if (!existSeller) throw new BadRequestError('Invalid seller id');
 

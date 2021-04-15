@@ -1,5 +1,7 @@
+const mongoose = require('../orm/mongoose');
 const PurchaseRepository = require('../../domain/purchase/purchaseRepository');
 const Purchase = require('../orm/mongoose/schemas/Purchase');
+const Product = require('../orm/mongoose/schemas/Product');
 
 module.exports = class extends PurchaseRepository {
   constructor() {
@@ -7,12 +9,19 @@ module.exports = class extends PurchaseRepository {
   }
 
   async create(productId, qnt) {
+    const sessions = await mongoose.startSession();
     const newPurchase = new Purchase({
       productId,
       qnt,
     });
-    await newPurchase.save();
+    await sessions.withTransaction(async () => {
+      const product = await Product.findById(productId).session(sessions);
+      product.stock += qnt;
 
+      await product.save();
+      await newPurchase.save();
+    });
+    sessions.endSession();
     return newPurchase;
   }
 
