@@ -1,7 +1,5 @@
 const SaleRepository = require('../../domain/sale/saleRepository');
 const Sale = require('../orm/mongoose/schemas/Sale');
-const Product = require('../orm/mongoose/schemas/Product');
-const Seller = require('../orm/mongoose/schemas/Seller');
 
 module.exports = class extends SaleRepository {
   constructor() {
@@ -18,17 +16,6 @@ module.exports = class extends SaleRepository {
     await sale.save();
 
     return sale;
-  }
-
-  async getProductById(productId) {
-    const [product] = await Product.find().where({ _id: productId });
-
-    return product;
-  }
-
-  async getSellerById(sellerId) {
-    const [seller] = await Seller.find().where({ _id: sellerId });
-    return seller;
   }
 
   async get(id) {

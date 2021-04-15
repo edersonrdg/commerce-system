@@ -1,7 +1,5 @@
 const SaleRepository = require('../../src/domain/sale/saleRepository');
 
-const products = [{ id: 0, name: 'Maçã'}, { id: 1, name: 'Banana' }]
-const sellers = [{ id: 0, name: 'Joao'}, { id: 1, name: 'Maria' }]
 const sales = []
 
 module.exports = class extends SaleRepository {
@@ -13,16 +11,6 @@ module.exports = class extends SaleRepository {
     sales.push({ productId, sellerId, clientName })
     return { productId, sellerId, clientName };
   };
-
-  getProductById(id) {
-    const product = products.find(p => p.id === id)
-    return product
-  }
-
-  getSellerById(id) {
-    const seller = sellers.find(s => s.id === id)
-    return seller
-  }
 
   get(id) {
     return sales[id]
