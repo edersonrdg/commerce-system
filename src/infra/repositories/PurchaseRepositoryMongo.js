@@ -16,7 +16,13 @@ module.exports = class extends PurchaseRepository {
     return newPurchase;
   }
 
-  get() {}
+  async get(id) {
+    const purchase = await Purchase.find().where({ _id: id });
+    return purchase;
+  }
 
-  getAll() {}
+  async getAll() {
+    const purchases = await Purchase.find();
+    return purchases;
+  }
 };

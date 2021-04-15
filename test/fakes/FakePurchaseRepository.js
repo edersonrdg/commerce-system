@@ -14,5 +14,7 @@ module.exports = class extends purchaseRepository {
 
   get() {}
 
-  getAll() {}
+  getAll() {
+    return purchases
+  }
 }

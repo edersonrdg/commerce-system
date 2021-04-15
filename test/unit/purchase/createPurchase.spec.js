@@ -11,7 +11,7 @@ function request(productId, qnt) {
   };
 };
 
-describe('Sale | Create', () => {
+describe('Purchase | Create', () => {
   beforeAll(async () => {
 
     await createProd.execute({ title: 'Carro', description: 'nova', price: 20 }, fakelocator);

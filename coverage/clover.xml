@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1618501729556" clover="3.2.0">
-  <project timestamp="1618501729557" name="All files">
-    <metrics statements="204" coveredstatements="204" conditionals="66" coveredconditionals="60" methods="69" coveredmethods="49" elements="339" coveredelements="313" complexity="0" loc="204" ncloc="204" packages="12" files="31" classes="31"/>
+<coverage generated="1618502341892" clover="3.2.0">
+  <project timestamp="1618502341893" name="All files">
+    <metrics statements="208" coveredstatements="208" conditionals="66" coveredconditionals="60" methods="70" coveredmethods="51" elements="344" coveredelements="319" complexity="0" loc="208" ncloc="208" packages="12" files="32" classes="32"/>
     <package name="src.application.useCases.Sale">
       <metrics statements="19" coveredstatements="19" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
       <file name="index.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\application\useCases\Sale\index.js">
@@ -37,14 +37,14 @@
       <metrics statements="28" coveredstatements="28" conditionals="10" coveredconditionals="10" methods="4" coveredmethods="4"/>
       <file name="createProduct.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\application\useCases\products\createProduct.js">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="8" count="18" type="stmt"/>
-        <line num="10" count="13" type="stmt"/>
-        <line num="12" count="13" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="12" type="stmt"/>
-        <line num="15" count="12" type="stmt"/>
+        <line num="1" count="8" type="stmt"/>
+        <line num="2" count="8" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="8" count="19" type="stmt"/>
+        <line num="10" count="14" type="stmt"/>
+        <line num="12" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="13" type="stmt"/>
+        <line num="15" count="13" type="stmt"/>
       </file>
       <file name="deleteProduct.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\application\useCases\products\deleteProduct.js">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
@@ -80,17 +80,23 @@
       </file>
     </package>
     <package name="src.application.useCases.purchase">
-      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="listPurchase.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\application\useCases\purchase\listPurchase.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
       <file name="newPurchase.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\application\useCases\purchase\newPurchase.js">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
       </file>
     </package>
     <package name="src.application.useCases.seller">
@@ -146,40 +152,40 @@
         <line num="3" count="26" type="stmt"/>
         <line num="4" count="26" type="stmt"/>
         <line num="10" count="26" type="stmt"/>
-        <line num="14" count="11" type="stmt"/>
+        <line num="14" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.domain.Product">
       <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="1"/>
       <file name="Product.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\domain\Product\Product.js">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="5" count="18" type="stmt"/>
-        <line num="7" count="13" type="stmt"/>
-        <line num="8" count="13" type="stmt"/>
-        <line num="9" count="13" type="stmt"/>
-        <line num="10" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="1" count="8" type="stmt"/>
+        <line num="3" count="8" type="stmt"/>
+        <line num="5" count="19" type="stmt"/>
+        <line num="7" count="14" type="stmt"/>
+        <line num="8" count="14" type="stmt"/>
+        <line num="9" count="14" type="stmt"/>
+        <line num="10" count="14" type="cond" truecount="2" falsecount="0"/>
       </file>
       <file name="productRepository.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\domain\Product\productRepository.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
-        <line num="1" count="11" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.domain.purchase">
       <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="4" coveredmethods="1"/>
       <file name="Purchase.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\domain\purchase\Purchase.js">
         <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="6" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="5" type="cond" truecount="2" falsecount="0"/>
       </file>
       <file name="purchaseRepository.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\domain\purchase\purchaseRepository.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="1" count="11" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.domain.sale">
@@ -197,7 +203,7 @@
       </file>
       <file name="saleRepository.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\domain\sale\saleRepository.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="1" count="11" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.domain.seller">
@@ -213,21 +219,21 @@
       </file>
       <file name="sellerRepository.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\domain\seller\sellerRepository.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
-        <line num="1" count="11" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.infra.validators.joi">
       <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
       <file name="product-validator.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\infra\validators\joi\product-validator.js">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="27" count="7" type="stmt"/>
-        <line num="29" count="18" type="stmt"/>
-        <line num="30" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="1" count="8" type="stmt"/>
+        <line num="2" count="8" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="27" count="8" type="stmt"/>
+        <line num="29" count="19" type="stmt"/>
+        <line num="30" count="19" type="cond" truecount="2" falsecount="0"/>
         <line num="31" count="5" type="stmt"/>
-        <line num="33" count="13" type="stmt"/>
+        <line num="33" count="14" type="stmt"/>
       </file>
       <file name="seller-validator.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\infra\validators\joi\seller-validator.js">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
@@ -251,26 +257,27 @@
         <line num="11" count="24" type="stmt"/>
         <line num="12" count="24" type="stmt"/>
         <line num="13" count="24" type="stmt"/>
-        <line num="17" count="11" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
       </file>
     </package>
     <package name="test.fakes">
-      <metrics statements="63" coveredstatements="63" conditionals="20" coveredconditionals="15" methods="30" coveredmethods="28"/>
+      <metrics statements="64" coveredstatements="64" conditionals="20" coveredconditionals="15" methods="30" coveredmethods="29"/>
       <file name="FakePurchaseRepository.js" path="C:\Users\wemer\Documents\commerce-system2.0\test\fakes\FakePurchaseRepository.js">
-        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
-        <line num="1" count="11" type="stmt"/>
-        <line num="3" count="11" type="stmt"/>
-        <line num="5" count="11" type="stmt"/>
-        <line num="7" count="11" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
       </file>
       <file name="FakeSaleRepository.js" path="C:\Users\wemer\Documents\commerce-system2.0\test\fakes\FakeSaleRepository.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-        <line num="1" count="11" type="stmt"/>
-        <line num="3" count="11" type="stmt"/>
-        <line num="5" count="11" type="stmt"/>
-        <line num="7" count="11" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
         <line num="11" count="5" type="stmt"/>
         <line num="12" count="5" type="stmt"/>
         <line num="16" count="2" type="stmt"/>
@@ -278,10 +285,10 @@
       </file>
       <file name="FakeSellerRepository.js" path="C:\Users\wemer\Documents\commerce-system2.0\test\fakes\FakeSellerRepository.js">
         <metrics statements="19" coveredstatements="19" conditionals="6" coveredconditionals="5" methods="10" coveredmethods="10"/>
-        <line num="1" count="11" type="stmt"/>
-        <line num="3" count="11" type="stmt"/>
-        <line num="5" count="11" type="stmt"/>
-        <line num="7" count="11" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
         <line num="11" count="4" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="19" count="11" type="stmt"/>
@@ -300,22 +307,22 @@
       </file>
       <file name="fakeProductRepository.js" path="C:\Users\wemer\Documents\commerce-system2.0\test\fakes\fakeProductRepository.js">
         <metrics statements="23" coveredstatements="23" conditionals="14" coveredconditionals="10" methods="11" coveredmethods="11"/>
-        <line num="1" count="11" type="stmt"/>
-        <line num="3" count="11" type="stmt"/>
-        <line num="5" count="11" type="stmt"/>
-        <line num="7" count="11" type="stmt"/>
-        <line num="11" count="12" type="stmt"/>
-        <line num="12" count="12" type="stmt"/>
-        <line num="14" count="12" type="stmt"/>
-        <line num="18" count="13" type="stmt"/>
-        <line num="19" count="13" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="11" count="13" type="stmt"/>
+        <line num="12" count="13" type="stmt"/>
+        <line num="14" count="13" type="stmt"/>
+        <line num="18" count="14" type="stmt"/>
+        <line num="19" count="14" type="stmt"/>
         <line num="23" count="3" type="stmt"/>
         <line num="24" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="26" count="3" type="cond" truecount="1" falsecount="1"/>
         <line num="27" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="30" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="34" count="24" type="stmt"/>
-        <line num="35" count="19" type="stmt"/>
+        <line num="34" count="26" type="stmt"/>
+        <line num="35" count="21" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
         <line num="43" count="2" type="stmt"/>
         <line num="44" count="3" type="stmt"/>
@@ -326,13 +333,13 @@
       </file>
       <file name="fakelocator.js" path="C:\Users\wemer\Documents\commerce-system2.0\test\fakes\fakelocator.js">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="11" type="stmt"/>
-        <line num="2" count="11" type="stmt"/>
-        <line num="3" count="11" type="stmt"/>
-        <line num="4" count="11" type="stmt"/>
-        <line num="7" count="11" type="stmt"/>
-        <line num="13" count="11" type="stmt"/>
-        <line num="16" count="11" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
+        <line num="16" count="12" type="stmt"/>
       </file>
     </package>
   </project>
