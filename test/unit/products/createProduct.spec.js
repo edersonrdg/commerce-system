@@ -3,19 +3,25 @@ const fakelocator = require('../../fakes/fakelocator');
 const { BadRequestError } = require('../../../src/interfaces/http/http-errors')
 const { ValidateError } = require('../../../src/domain/errors')
 
-function request(title, description, price) {
+function request(title, description, price, stock) {
   return {
     title,
     description,
-    price
+    price,
+    stock
   };
 };
 
 describe('Product | Create', () => {
   it('Should to create a new product', async () => {
-    const product = await createProduct.execute(request('CARRO', 'USADO', 2000), fakelocator);
+    const product = await createProduct.execute(request('CARRO', 'USADO', 2000, 20), fakelocator);
 
-    expect(product).toEqual(request('CARRO', 'USADO', 2000));
+    expect(product).toEqual(request('CARRO', 'USADO', 2000, 20));
+  });
+  it('Should to create a new product without stock', async () => {
+    const product = await createProduct.execute(request('CARRO2', 'USADO', 2000), fakelocator);
+
+    expect(product).toEqual(request('CARRO2', 'USADO', 2000, 0));
   });
   it('Should to return custom error if product is already exists', async () => {
     await expect(createProduct.execute(request('carro', 'usado', 2000), fakelocator))

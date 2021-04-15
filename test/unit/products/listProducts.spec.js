@@ -28,10 +28,12 @@ describe('Product | List', () => {
       title: 'CARRO',
       description: 'USADO',
       price: 2000,
+      stock: 0
     },{
       title: 'BICICLETA',
       description: 'USADO',
       price: 2000,
+      stock: 0
     }]);
 
     expect(product.length).toEqual(2);
@@ -44,6 +46,7 @@ describe('Product | List', () => {
       title: 'CARRO',
       description: 'USADO',
       price: 2000,
+      stock: 0
     });
   });
   it('Should to return product by query title', async () => {
@@ -54,6 +57,7 @@ describe('Product | List', () => {
       title: 'BICICLETA',
       description: 'USADO',
       price: 2000,
+      stock: 0
     }]);
   });
 

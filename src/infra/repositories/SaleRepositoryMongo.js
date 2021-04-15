@@ -9,13 +9,14 @@ module.exports = class extends SaleRepository {
     super();
   }
 
-  async create(productId, sellerId, clientName) {
+  async create(productId, sellerId, clientName, qnt) {
     const sessions = await mongoose.startSession();
 
     const sale = new Sale({
       productId,
       sellerId,
       clientName,
+      qnt,
     });
 
     await sessions.withTransaction(async () => {

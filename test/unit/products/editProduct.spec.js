@@ -32,7 +32,8 @@ describe('Product | Edit', () => {
     expect(product).toEqual({
       title: 'CARRO',
       description: 'new description',
-      price: 1010
+      price: 1010,
+      stock: 0
     })
   });
   it('Should to edit only params passed product', async () => {
@@ -47,7 +48,8 @@ describe('Product | Edit', () => {
     expect(product).toEqual({
       title: 'CARRO2',
       description: 'USADO',
-      price: 1010
+      price: 1010,
+      stock: 0
     })
   });
 

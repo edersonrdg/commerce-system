@@ -7,8 +7,8 @@ module.exports = class extends SaleRepository {
     super();
   }
 
-  async create(productId, sellerId, clientName) {
-    sales.push({ productId, sellerId, clientName })
+  async create(productId, sellerId, clientName, qnt) {
+    sales.push({ productId, sellerId, clientName, qnt })
     return { productId, sellerId, clientName };
   };
 

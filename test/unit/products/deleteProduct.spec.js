@@ -30,6 +30,7 @@ describe('Product | Delete', () => {
       title: 'CARRO2',
       description: 'USADO',
       price: 2000,
+      stock: 0
     }])
   });
 

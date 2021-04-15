@@ -6,18 +6,19 @@ const fakelocator = require('../../fakes/fakelocator');
 const { BadRequestError } = require('../../../src/interfaces/http/http-errors')
 const { ValidateError } = require('../../../src/domain/errors')
 
-function request(productId, sellerId, clientName) {
+function request(productId, sellerId, clientName, qnt) {
   return {
     productId,
     sellerId,
-    clientName
+    clientName,
+    qnt
   };
 };
 
 describe('Sale | Create', () => {
   beforeAll(async () => {
 
-    await createProd.execute({ title: 'Carro', description: 'nova', price: 20 }, fakelocator);
+    await createProd.execute({ title: 'Carro', description: 'nova', price: 20, stock: 2 }, fakelocator);
     await createProd.execute({ title: 'Carro2', description: 'nova', price: 20 }, fakelocator);
     await createSeller.execute({ name: 'joao', image: 'joao.jpg', code: 'AAA' }, fakelocator)
     await createSeller.execute({ name: 'Maria', image: 'maria.jpg', code: 'BBB' }, fakelocator)
@@ -36,6 +37,9 @@ describe('Sale | Create', () => {
 
   it('Should to return custom error if productId is invalid', async () => {
     await expect(createSale.execute(request('CARRO3', 'AAA'), fakelocator)).rejects.toEqual(new BadRequestError('Invalid product id'));
+  });
+  it('Should to return custom error if sale qnt is greater than product qnt', async () => {
+    await expect(createSale.execute(request('CARRO', 'AAA', null, 5), fakelocator)).rejects.toEqual(new BadRequestError('This product has no stock'));
   });
 
   it('Should to return custom error if SellerId is invalid', async () => {

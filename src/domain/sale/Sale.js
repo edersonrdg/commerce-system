@@ -9,5 +9,6 @@ module.exports = class {
     this.productId = data.productId;
     this.sellerId = data.sellerId;
     this.clientName = data.clientName || 'Anônimo';
+    this.qnt = data.qnt || 1;
   }
 };

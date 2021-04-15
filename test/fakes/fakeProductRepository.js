@@ -7,8 +7,8 @@ module.exports = class extends ProductRepository {
     super();
   }
 
-  async create(title, description, price) {
-    const data = { title, description, price };
+  async create(title, description, price, stock) {
+    const data = { title, description, price, stock };
     products.push(data);
 
     return data;
