@@ -19,6 +19,7 @@
 - [Autor](#Autor)
 
 ---
+Aplicação utilizando conceitos de TDD, Arquitetura DDD, Solid e clean architecture.
 
 <p float="left">
   <img src="https://media3.giphy.com/media/kXBzWNZu2ozg5u7Raz/giphy.gif" width="400" />
