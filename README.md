@@ -1,4 +1,5 @@
-# commerce-system
+[![License Badge](https://img.shields.io/github/license/facebook/react)](https://img.shields.io/github/license/facebook/react)
+# commerce-system  
 
 ## Sistema de controle de produtos, vendedores, compras e vendas.
 
