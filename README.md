@@ -21,8 +21,8 @@
 ---
 
 <p float="left">
-  <img src="https://media3.giphy.com/media/kXBzWNZu2ozg5u7Raz/giphy.gif" width="300" />
-  <img src="https://i.ibb.co/641KsQr/imagem-2021-04-15-231420.png" width="300"/> 
+  <img src="https://media3.giphy.com/media/kXBzWNZu2ozg5u7Raz/giphy.gif" width="400" />
+  <img src="https://i.ibb.co/641KsQr/imagem-2021-04-15-231420.png" width="400"/> 
 </p>
 
 ---
