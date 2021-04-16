@@ -8,6 +8,10 @@ const purchaseSchema = new mongoose.Schema({
     type: Number,
     required: [true, 'Quantity is required'],
   },
+  cost: {
+    type: Number,
+    required: [true, 'Cost is required'],
+  },
 }, {
   timestamps: true,
 });
