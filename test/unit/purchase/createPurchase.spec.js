@@ -3,11 +3,13 @@ const createProd = require('../../../src/application/useCases/products/createPro
 
 const fakelocator = require('../../fakes/fakelocator');
 const { BadRequestError } = require('../../../src/interfaces/http/http-errors')
+const { ValidateError } = require('./../../../src/domain/errors')
 
-function request(productId, qnt) {
+function request(productId, qnt, cost) {
   return {
     productId,
-    qnt
+    qnt,
+    cost
   };
 };
 
@@ -18,19 +20,23 @@ describe('Purchase | Create', () => {
     })
 
   it('Should to create a new purchase', async () => {
-    const purchase = await newPurchase.execute(request('CARRO', 20), fakelocator);
+    const purchase = await newPurchase.execute(request('CARRO', 20, 2), fakelocator);
 
     expect(purchase).toEqual(request('CARRO', 20));
   });
   it('Should to create a new purchase without qnt', async () => {
-    const purchase = await newPurchase.execute(request('CARRO'), fakelocator);
+    const purchase = await newPurchase.execute(request('CARRO', null, 2), fakelocator);
 
     expect(purchase).toEqual(request('CARRO', 1));
   });
 
   it('Should to return custom error if product Id is invalid', async () => {
 
-    await expect(newPurchase.execute(request('BICICLETA', 20), fakelocator)).rejects.toEqual(new BadRequestError('Invalid product id'));
+    await expect(newPurchase.execute(request('BICICLETA', 20, 2), fakelocator)).rejects.toEqual(new BadRequestError('Invalid product id'));
+  });
+  it('Should to return custom error if cost is invalid', async () => {
+
+    await expect(newPurchase.execute(request('BICICLETA', 20), fakelocator)).rejects.toEqual(new ValidateError('Cost is required'));
   });
 
 });

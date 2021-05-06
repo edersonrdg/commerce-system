@@ -26,6 +26,7 @@ module.exports = class extends SaleRepository {
 
       const seller = await Seller.findById(sellerId).session(sessions);
       seller.sales += qnt;
+      seller.revenue += product.price * qnt;
 
       await sale.save();
       await product.save();

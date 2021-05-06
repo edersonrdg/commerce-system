@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1618521641133" clover="3.2.0">
-  <project timestamp="1618521641134" name="All files">
-    <metrics statements="225" coveredstatements="225" conditionals="76" coveredconditionals="71" methods="76" coveredmethods="56" elements="377" coveredelements="352" complexity="0" loc="225" ncloc="225" packages="12" files="34" classes="34"/>
+<coverage generated="1618539532860" clover="3.2.0">
+  <project timestamp="1618539532860" name="All files">
+    <metrics statements="228" coveredstatements="228" conditionals="78" coveredconditionals="73" methods="76" coveredmethods="56" elements="382" coveredelements="357" complexity="0" loc="228" ncloc="228" packages="12" files="34" classes="34"/>
     <package name="src.application.useCases.Sale">
       <metrics statements="25" coveredstatements="25" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
       <file name="deleteSale.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\application\useCases\Sale\deleteSale.js">
@@ -114,7 +114,7 @@
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
-        <line num="6" count="7" type="stmt"/>
+        <line num="6" count="8" type="stmt"/>
         <line num="8" count="7" type="stmt"/>
         <line num="9" count="7" type="cond" truecount="2" falsecount="0"/>
         <line num="11" count="6" type="stmt"/>
@@ -171,9 +171,9 @@
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="errors.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\domain\errors.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="3" count="26" type="stmt"/>
-        <line num="4" count="26" type="stmt"/>
-        <line num="10" count="26" type="stmt"/>
+        <line num="3" count="28" type="stmt"/>
+        <line num="4" count="28" type="stmt"/>
+        <line num="10" count="28" type="stmt"/>
         <line num="14" count="14" type="stmt"/>
       </file>
     </package>
@@ -195,12 +195,15 @@
       </file>
     </package>
     <package name="src.domain.purchase">
-      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="1"/>
+      <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="1"/>
       <file name="Purchase.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\domain\purchase\Purchase.js">
-        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="8" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="7" type="stmt"/>
       </file>
       <file name="purchaseRepository.js" path="C:\Users\wemer\Documents\commerce-system2.0\src\domain\purchase\purchaseRepository.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
