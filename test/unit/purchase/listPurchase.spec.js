@@ -6,10 +6,11 @@ const createProd = require('../../../src/application/useCases/products/createPro
 const fakelocator = require('../../fakes/fakelocator');
 const { BadRequestError } = require('../../../src/interfaces/http/http-errors')
 
-function request(productId, qnt) {
+function request(productId, qnt, cost) {
   return {
     productId,
-    qnt
+    qnt,
+    cost
   };
 };
 
@@ -17,8 +18,8 @@ describe('Purchase | List', () => {
   beforeAll(async () => {
 
     await createProd.execute({ title: 'Carro', description: 'nova', price: 20 }, fakelocator);
-    await newPurchase.execute(request('CARRO', 20), fakelocator);
-    await newPurchase.execute(request('CARRO', 20), fakelocator);
+    await newPurchase.execute(request('CARRO', 20, 2), fakelocator);
+    await newPurchase.execute(request('CARRO', 20, 2), fakelocator);
     })
 
   it('Should to list all purchases', async () => {

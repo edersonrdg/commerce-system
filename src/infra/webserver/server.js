@@ -1,5 +1,6 @@
 const express = require('express');
 require('express-async-errors');
+const cors = require('cors');
 const uploadConfig = require('../config/upload');
 const errorTreatment = require('../../interfaces/http/middlewares/error-handling');
 const routes = require('../../interfaces/http/routes');
@@ -7,6 +8,7 @@ const routes = require('../../interfaces/http/routes');
 const createServer = () => {
   const server = express();
 
+  server.use(cors());
   server.use('/files', express.static(uploadConfig.directory));
   server.use(routes);
   server.use(errorTreatment);

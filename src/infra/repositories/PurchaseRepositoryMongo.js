@@ -8,15 +8,17 @@ module.exports = class extends PurchaseRepository {
     super();
   }
 
-  async create(productId, qnt) {
+  async create(productId, qnt, cost) {
     const sessions = await mongoose.startSession();
     const newPurchase = new Purchase({
       productId,
       qnt,
+      cost,
     });
     await sessions.withTransaction(async () => {
       const product = await Product.findById(productId).session(sessions);
       product.stock += qnt;
+      product.totalcost += cost * qnt;
 
       await product.save();
       await newPurchase.save();
