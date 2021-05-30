@@ -6,8 +6,9 @@
   "author": "<edersonrodrigo31@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "node:front": "cd view && yarn start",
-    "node:dev": "nodemon index.js",
+    "node:frontend": "cd src/view && yarn start",
+    "node:backend": "nodemon index.js",
+    "node:devall": "concurrently \"nodemon index.js\"  \"cd src/view && yarn start\"",
     "test": "jest test --verbose --coverage --color",
     "test:unit": "jest test/unit --watch"
   },
