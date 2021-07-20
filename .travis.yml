@@ -1,6 +1,9 @@
-
 language: node_js
 node_js:
-  - 15
+  - 12
+
+install:
+  - npm ci
+
 script:
   - npm run test:coveralls
