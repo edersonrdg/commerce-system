@@ -1,4 +1,6 @@
 [![License Badge](https://img.shields.io/github/license/facebook/react)](https://img.shields.io/github/license/facebook/react)
+[![Coverage Status](https://coveralls.io/repos/github/edersonrdg/commerce-system/badge.svg?branch=main)](https://coveralls.io/github/edersonrdg/commerce-system?branch=main)
+
 # commerce-system  
 
 ## Sistema de controle de produtos, vendedores, compras e vendas.
