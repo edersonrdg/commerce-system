@@ -9,9 +9,9 @@
     "node:frontend": "cd src/view && yarn start",
     "node:backend": "nodemon index.js",
     "node:devall": "concurrently \"nodemon index.js\"  \"cd src/view && yarn start\"",
-    "test": "jest --verbose --coverage --color",
+    "test": "jest test --verbose --coverage --color",
     "test:unit": "jest test/unit --watch",
-    "test:coveralls": "npm run test && coveralls < coverage/lcov.info"
+    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "dependencies": {
     "cors": "^2.8.5",
