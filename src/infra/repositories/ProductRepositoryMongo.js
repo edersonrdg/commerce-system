@@ -25,7 +25,7 @@ module.exports = class extends ProductRepository {
 
     const products = await Product.find({
       title: { $regex: titleEx.toUpperCase() },
-    });
+    }).sort('-createdAt');
 
     return products;
   }

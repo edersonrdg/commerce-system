@@ -9,7 +9,7 @@
     "node:frontend": "cd src/view && yarn start",
     "node:backend": "nodemon index.js",
     "node:devall": "concurrently \"nodemon index.js\"  \"cd src/view && yarn start\"",
-    "test": "jest test --verbose --coverage --color",
+    "test": "jest --verbose --coverage --color",
     "test:unit": "jest test/unit --watch"
   },
   "dependencies": {
@@ -26,6 +26,7 @@
     "eslint": "^7.23.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "2.22.1",
+    "jest": "^27.0.6",
     "nodemon": "^2.0.7"
   }
 }
