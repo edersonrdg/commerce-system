@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/edersonrdg/commerce-system.svg?branch=main)](https://travis-ci.org/edersonrdg/commerce-system)
 [![License Badge](https://img.shields.io/github/license/facebook/react)](https://img.shields.io/github/license/facebook/react)
 [![Coverage Status](https://coveralls.io/repos/github/edersonrdg/commerce-system/badge.svg?branch=main)](https://coveralls.io/github/edersonrdg/commerce-system?branch=main)
 
